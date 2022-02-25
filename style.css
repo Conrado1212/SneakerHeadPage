@@ -1,0 +1,480 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.searchIcon{
+    width: 20;
+    height: 20;
+}
+nav{
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+}
+
+.navBar{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.logo{
+    font-size: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.searchInput{
+    border: none;
+    background-color: gray;
+}
+.searchInput::placeholder{
+    color: lightgray
+}
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid gray;
+    cursor: pointer;
+}
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Menu{
+    margin-right: 40px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+    
+}
+.MenuList{
+    background: url("https://images.unsplash.com/photo-1537420327992-d6e192287183?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit");
+    background-color: transparent;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 90%);
+    overflow: hidden;
+  
+}
+.Wrapper{
+  display: flex;  
+  width: 500vw;
+  transition: all 1s ease-in-out;
+}
+.menuBg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+}
+.menuItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.menuTitle{
+    position: absolute;
+    top: 10%;
+    color: white;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: left;
+    z-index: 1;
+    
+}
+.menuPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+}
+.buyButton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid gray;
+    background-color: #111;
+    z-index: 1;
+    cursor: pointer;
+}
+.menuImg{
+    z-index: 1;  
+}
+.buyButton:hover{
+    background-color: gray;
+    color: #111;
+}
+.menuItem:nth-child(1) .menuBg{
+    background-color: lightskyblue
+}
+.menuItem:nth-child(2) .menuBg{
+    background-color: darkgrey
+}
+.menuItem:nth-child(3) .menuBg{
+    background-color: #111
+}
+.menuItem:nth-child(4) .menuBg{
+    background-color: firebrick
+}
+.menuItem:nth-child(5) .menuBg{
+    background-color: goldenrod
+}
+.menuItem:nth-child(1) .menuPrice{
+    background-color: lightskyblue
+}
+.menuItem:nth-child(2) .menuPrice{
+    background-color: darkgrey
+}
+.menuItem:nth-child(3) .menuPrice{
+    background-color: 111
+}
+.menuItem:nth-child(4) .menuPrice{
+    background-color: firebrick
+}
+.menuItem:nth-child(5) .menuPrice{
+    background-color: goldenrod
+}
+.functions{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.function{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.functionImg{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+.functionSpan{
+    font-size: 24px;
+    font-weight: 600;
+    margin: auto;
+}
+.functionDes{
+    color: gray;
+    width: 50px;
+    height: 100px;
+}
+.product{
+    height: 100vh;
+    background-color:gray;
+    position: relative;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+.productImg{
+
+}
+.productDesc{
+position: absolute;
+top: 10%;
+right:0%;
+width: 40%;
+padding: 50px;
+}
+.productName{
+    font-size:48px;
+    font-weight: 600;
+}
+.productPrice{
+
+}
+.productDe{
+    font-size: 24px;
+    color: black;
+}
+.productButton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid gray;
+    background-color: #111;
+    cursor: pointer;
+    padding: 10px 20px;
+    float: right;
+}
+.productButton:hover{
+        background-color:gainsboro;
+        color: #111;
+}
+.colors{
+    display: flex; 
+    align-items: center;
+    margin:100px;
+}
+.color{
+    width: 50px;
+    height: 50px;
+    font-size:24px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: pink;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.color:last-child{
+    background-color :black;
+}
+.color:hover{
+    background-color:palevioletred;
+    color: #111;
+}
+.color:hover:last-child{
+    background-color: darkgray;
+}
+.sizes{
+    display: flex; 
+    align-items: center;
+    margin: 100px;
+    
+    
+}
+.size{
+    font-size:24px;
+    font-weight: 600;
+    border: 1px solid black;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.size:hover{
+    background-color:gainsboro;
+    color: #111;
+}
+.pay{
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.payName{
+   font-size: 24px;
+   color: black;
+}
+.formBox{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    margin: 6% auto;
+    background: #C0C0C0;
+    padding: 5px;
+    overflow:hidden;
+    border-radius: 10px;
+    border: 1px solid  black;
+    display: none;
+}
+.input-field{
+    width:50%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top:0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.CardImgs{
+    display: flex;
+}
+.CardImg{
+ width: 130px;
+ height: 100px;
+ margin-right: 10px;
+ align-items: center;
+ margin-left: 40px;
+ cursor: pointer;
+}
+.payButton{
+    width:85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #000000, 	#808080);
+    border:0;
+    outline:none;
+    border-radius: 30px;
+    color:#fff;
+}
+.close{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: black;
+  color: white;
+  top: 5px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2px;
+}
+.close:hover{
+    background-color: lightslategray;
+    color: white;
+}
+.gallery{
+    padding: 50px;
+    display: flex;
+}
+.galleryIMgs{
+    flex: 1;
+    padding: 50px;
+    
+}
+.galleryImg{
+   width: 100%;
+}
+.galleryName{
+    font-size: 32px;
+    color:black;
+    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.newSeason{
+    display: flex;
+}
+.newItem{
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.newNameS{
+    font-size: 48px;
+    color:white;
+    margin-left: 20px;
+}
+.newName{
+    font-size: 48px;
+    color:white;
+    margin-left: 20px;
+}
+.newButton{
+    width:85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #000000, 	#808080);
+    border:0;
+    outline: none;
+    border-radius: 30px;
+    color:#fff;
+
+}
+.newItemImg{
+    width: 100%;
+    height: 500px;
+}
+footer{
+    display: flex;
+}
+.fotterekl{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.ManuListt{
+    font-size: 24px;
+}
+.list{
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+    list-style: none;
+}
+ol{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.fotterekR{
+    flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footerMenu{
+    font-size: 24px;
+}
+.icons{
+display: flex;
+}
+.socialIcon{
+    width:50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.footerInput{
+    width:50%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top:0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.footerButton{
+    width:25%;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin: auto;
+    background: linear-gradient(to right, #000000, 	#808080);
+    border:0;
+    outline: none;
+    border-radius: 30px;
+    color:#fff;
+}
+.copyright{
+    font-weight: 600;
+  font-size: 24px;
+}
+@media screen and(max-width:480px){
+
+}
