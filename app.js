@@ -145,3 +145,5 @@ productButton.addEventListener("click", () => {
 close.addEventListener("click", () => {
   pay.style.display = "none";
 });
+
+
